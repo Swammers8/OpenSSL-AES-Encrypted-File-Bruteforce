@@ -1,5 +1,5 @@
 # OpenSSL Encrypted File Bruteforcer
-I made a quick tool in bash that uses a dictionary attack against files encrypted with OpenSSL's enc function. Example: `openssl enc -aes256 -pbkdf2 -in /etc/passwd -out passwd.enc'. If the file was encrypted with a custom iteration count such as `-iter 100000` you will need to know that or it won't work. If it wasn't specified at encryption, OpenSSL will default to `10000`. Whether the `-salt` flag was set or not this script will still work.
+I made a quick tool in bash that uses a dictionary attack against files encrypted with OpenSSL's enc function. Example: `openssl enc -aes256 -pbkdf2 -in /etc/passwd -out passwd.enc`. If the file was encrypted with a custom iteration count such as `-iter 100000` you will need to know that or it won't work. If it wasn't specified at encryption, OpenSSL will default to `10000`. Whether the `-salt` flag was set or not this script will still work.
 
 ## Usage
 ```
